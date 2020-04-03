@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/img/favicon.ico">
+
+    <!--Description-->
+    
+        <meta name="description" content="pentest web security ServerScan Trim">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Trim">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Trim | 网络安全,始于心,践于行"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="pentest web security ServerScan Trim" />
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Trim | 网络安全,始于心,践于行"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="website" />
+    
+
+    <!--Page Cover-->
+    
+
+    
+        <meta name="twitter:card" content="summary" />
+    
+    
+    
+
+    <!-- Title -->
+    
+    <title>Trim | 网络安全,始于心,践于行</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Google Analytics -->
+    
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+
+<div class="bg-gradient"></div>
+<div class="bg-pattern"></div>
+
+<!-- Menu -->
+<!--Menu Links and Overlay-->
+<div class="menu-bg">
+    <div class="menu-container">
+        <ul>
+            
+            <li class="menu-item">
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/archives">
+                    Archives
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/2017/01/01/about_me/">
+                    About
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/tags">
+                    Tags
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!--Hamburger Icon-->
+<nav>
+    <a href="#menu"></a>
+</nav>
+
+<div class="container">
+
+    <!-- Main Content -->
+    <div class="row">
+    <div class="col-sm-12">
+
+        <!--Title and Logo-->
+        <header>
+    <div class="logo">
+        <a href="/"><i class="logo-icon fa fa-desktop" aria-hidden="true"></i></a>
+        
+            <h1 id="main-title" class="title">Trim | 网络安全,始于心,践于行</h1>
+        
+    </div>
+</header>
+
+        <section class="main">
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2020/04/05/ServerScan/">
+                ServerScan
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2020-04-05</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <h1 id="ServerScan"><a href="#ServerScan" class="headerlink" title="ServerScan"></a>ServerScan</h1><p>一款使用<strong>Golang</strong>开发且适用于攻防演习<strong>内网横向信息收集</strong>的<strong>高并发</strong>网络扫描、服务探测工具。</p>
+<h2 id="🍭Property"><a href="#🍭Property" class="headerlink" title="🍭Property"></a>🍭Property</h2><ul>
+<li>多平台支持（Window、Mac、Linux、Cobalt Strike）</li>
+<li>存活IP探测（支持TCP、ICMP两种模式）</li>
+<li>超快的端口扫描</li>
+<li>新增服务和应用版本检测功能，采用内置指纹探针采用<a href="https://raw.githubusercontent.com/nmap/nmap/master/nmap-service-probes" target="_blank" rel="noopener">nmap-service-probes</a></li>
+<li>Web服务（http、https）信息探测</li>
+<li><del>扫描结果兼容INFINITY攻防协同平台 （暂不公开）</del></li>
+</ul>
+<h2 id="🎉First-Game"><a href="#🎉First-Game" class="headerlink" title="🎉First Game"></a>🎉First Game</h2><p>​    总结诸多实战经验，考虑到实战过程中会出现和存在诸多复杂的环境，因此<strong>ServerScan</strong>设计了<strong>轻巧版</strong>、<strong>专业版</strong>、支持<strong>Cobalt Strike跨平台beacon: **[</strong>Cross C2<strong>](<a href="https://github.com/gloxec/CrossC2)的动态链接库，~~以及支持" target="_blank" rel="noopener">https://github.com/gloxec/CrossC2)的动态链接库，~~以及支持</a></strong>INFINITY攻防协同平台的专用版**~~。便于在不同的Shell环境中可以轻松自如的使用：如：Windows Cmd、Linux Console、远控Console、WebShell等，以及Cobalt Strike cna脚本文件加载和无文件落地的内存加载使用。</p>
+<p><strong>轻巧版：</strong></p>
+<p>​    参数形式简单、扫描速度快耗时短、文件体积小、适合在网络情况较好条件情况下使用。</p>
+<p><strong>专业版：</strong></p>
+<p>​    支持参数默认值、支持自定义扫描超时时长、支持扫描结果导出、适合在网络情况较苛刻的条件情况下使用。</p>
+<p><strong>动态链接库：</strong></p>
+<p>​    为支持Cobalt Strike跨平台beacon，基于轻巧版本进行编译动态链接库编译，扫描超时时长为1.5秒。</p>
+<h3 id="💻for-Linux-or-Windows"><a href="#💻for-Linux-or-Windows" class="headerlink" title="💻for  Linux or Windows"></a>💻for  Linux or Windows</h3><ul>
+<li><h4 id="轻巧版"><a href="#轻巧版" class="headerlink" title="轻巧版"></a>轻巧版</h4><ul>
+<li><p><strong><em>for PortScan</em></strong></p>
+<p><strong>Usage：</strong></p>
+<p><img src="./img/Linux/Air_scan_use.png" alt="Air_scan_use"></p>
+<p><strong>Scanning：</strong></p>
+<p><img src="./img/Linux/Air_scan.png" alt="Air_scan1"></p>
+</li>
+<li><p><strong><em>for Service and Version Detection</em></strong></p>
+<p><strong>Usage：</strong></p>
+<p><img src="./img/Windows/Air_scan_probes_use.png" alt="Air_scan_probes_use"></p>
+<p><strong>Scanning：</strong></p>
+<p><img src="./img/Windows/Air_scan_probes.png" alt="Air_scan_probes"></p>
+</li>
+</ul>
+</li>
+<li><h4 id="专业版"><a href="#专业版" class="headerlink" title="专业版"></a>专业版</h4><ul>
+<li><p><strong><em>for PortScan</em></strong></p>
+<p><strong>Usage：</strong></p>
+<p><img src="./img/Linux/Pro_scan_use.png" alt="Pro_scan_use"></p>
+<p><strong>Scanning：</strong></p>
+<p><img src="./img/Linux/Pro_scan.png" alt="Pro_scan"></p>
+</li>
+<li><p><strong><em>for Service and Version Detection</em></strong></p>
+<p><strong>Usage：</strong></p>
+<p><img src="./img/Windows/Pro_scan_probes_use.png" alt="Pro_scan_probes_use"></p>
+<p><strong>Scanning：</strong></p>
+<p><img src="./img/Windows/Pro_scan_probes.png" alt="Pro_scan_probes"></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="🎮for-Cobalt-Strike"><a href="#🎮for-Cobalt-Strike" class="headerlink" title="🎮for Cobalt Strike"></a>🎮for Cobalt Strike</h3><pre><code>  * can脚本
+
+* for PortScan
+
+
+
+* for Service and Version Detection</code></pre><ul>
+<li><p>Cobalt Strike跨平台beacon</p>
+<ul>
+<li>for PortScan</li>
+</ul>
+</li>
+</ul>
+<pre><code>* for Service and Version Detection</code></pre><h2 id="🌈Runtime-Environment"><a href="#🌈Runtime-Environment" class="headerlink" title="🌈Runtime Environment"></a>🌈Runtime Environment</h2><p>为了实现<strong>“一次开发，到处运行“</strong>的效果，<strong>ServerScan</strong>采用具有跨平台编译特性的<strong>Golang</strong>进行开发。</p>
+<p>目前已成功编译了<strong>三大主流操作系统</strong>的<strong>可执行程序</strong>和<strong>动态链接库</strong>，并在如下操作系统<strong>通过</strong>了运行测试：</p>
+<h4 id="📺Windows"><a href="#📺Windows" class="headerlink" title="📺Windows"></a>📺Windows</h4><ul>
+<li><p><strong>Windows 2003</strong></p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> <strong>x86</strong></li>
+</ul>
+</li>
+<li><p><strong>Windows 2008 server 、Windows 2012  server 、Windows 7 、Windows  10</strong></p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> <strong>x86</strong></li>
+<li><input checked="" disabled="" type="checkbox"> <strong>x64</strong></li>
+<li><input checked="" disabled="" type="checkbox"> <strong>.dll</strong></li>
+</ul>
+</li>
+</ul>
+<h4 id="🐧Linux"><a href="#🐧Linux" class="headerlink" title="🐧Linux"></a>🐧Linux</h4><ul>
+<li><strong>Ubuntu 、Centos、Kali</strong><ul>
+<li><input checked="" disabled="" type="checkbox"> <strong>x86</strong></li>
+<li><input checked="" disabled="" type="checkbox"> <strong>x64</strong></li>
+<li><input checked="" disabled="" type="checkbox"> <strong>.so</strong></li>
+</ul>
+</li>
+</ul>
+<h4 id="🍎Mac-OS"><a href="#🍎Mac-OS" class="headerlink" title="🍎Mac OS"></a>🍎Mac OS</h4><ul>
+<li><input checked="" disabled="" type="checkbox"> <strong>x64</strong></li>
+<li><input checked="" disabled="" type="checkbox"> <strong>.dylib</strong></li>
+</ul>
+<h2 id="🐱‍👓Usage"><a href="#🐱‍👓Usage" class="headerlink" title="🐱‍👓Usage"></a>🐱‍👓Usage</h2><ul>
+<li><p><strong>轻巧版</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">HOST  Host to be scanned, supports four formats:</span><br><span class="line">		192.168.1.1</span><br><span class="line">		192.168.1.1-10</span><br><span class="line">		192.168.1.*</span><br><span class="line">		192.168.1.0/24</span><br><span class="line">PORT  Customize port list, separate with ',' example: 21,22,80-99,8000-8080 ...</span><br><span class="line">MODEL Scan Model: icmp or tcp</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>专业版</strong></p>
+  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">-h string</span><br><span class="line">  	Host to be scanned, supports four formats:</span><br><span class="line">  	192.168.1.1</span><br><span class="line">  	192.168.1.1-10</span><br><span class="line">  	192.168.1.*</span><br><span class="line">  	192.168.1.0/24.</span><br><span class="line">-m string</span><br><span class="line">  	Scan Model icmp or tcp. (default "icmp")</span><br><span class="line">-o string</span><br><span class="line">  	Output the scanning information to file.</span><br><span class="line">-p string</span><br><span class="line">  	Customize port list, separate with ',' example: 21,22,80-99,8000-8080 ... (default "80-99,7000-9000,9001-9999,4430,1433,1521,3306,5000,5432,6379,21,22,100-500,873,4440,6082,3389,5560,5900-5909,1080,1900,10809,50030,50050,50070")</span><br><span class="line">-t int</span><br><span class="line">  	Setting scaner connection timeouts,Maxtime 3000 Millisecond. (default 1500)</span><br><span class="line">-v	ServerScan Build Version</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Cobalt Strike版本</strong></p>
+<ul>
+<li>can脚本</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Hook - 无文件落地</li>
+</ul>
+<ul>
+<li><p><strong>INFINITY攻防协同平台版本</strong></p>
+<p>​    <del>（暂不公开）</del></p>
+</li>
+</ul>
+<h2 id="💖鸣谢"><a href="#💖鸣谢" class="headerlink" title="💖鸣谢"></a>💖鸣谢</h2><p>一路走来，得到了很多前辈的帮助和指导，在此表示衷心的感谢！</p>
+<p>下列是本项目使用或者参考的优秀开源框架，感谢网上众多的开源项目及其开源项目的作者，致敬每一位为网络安全事业做出贡献的每一位前辈！</p>
+<ul>
+<li><a href="https://github.com/soxfmr/httpscan.go" target="_blank" rel="noopener">httpscan</a> - httpscan implements by Go</li>
+<li><a href="https://github.com/malfunkt/iprange" target="_blank" rel="noopener">iprange</a> - IPv4 address parser for the nmap format</li>
+<li><a href="https://github.com/stefanwichmann/lanscan" target="_blank" rel="noopener">lanscan</a> - Blazing fast, local network scanning in Go</li>
+<li><a href="https://github.com/RickGray/vscan-go" target="_blank" rel="noopener">vscan-go</a> - Golang version for nmap service and application version detection</li>
+</ul>
+<h2 id="📄版权"><a href="#📄版权" class="headerlink" title="📄版权"></a>📄版权</h2><p>​    该项目未经作者本人允许，禁止商业性使用。</p>
+<p>​    任何人不得将其用于非法用途以及盈利等目的，否则后果自行承担并将追究其相关责任！</p>
+<h2 id="📜免责声明"><a href="#📜免责声明" class="headerlink" title="📜免责声明"></a>📜免责声明</h2><ol>
+<li><p>本工具仅面向于合法授权的渗透测试安全人员以及进行常规操作的网络运维人员，用户可以合法且非商业目的地前提进行下载、传播、复制、使用本工具。</p>
+</li>
+<li><p>本工具使用过程中，您应确保自己所有行为符合当地的法律法规，并且已经取得了足够的合法授权。</p>
+</li>
+<li><p>不得将此软件用于从事违反中国人民共和国相关法律所禁止的活动，本工具所有作者和所有贡献者不承担用户擅自使用本工具从事的任何违法活动所产生的任何责任。</p>
+</li>
+</ol>
+<p>   您已充分阅读、完全理解并接受本协议所有条款，否则，请您不要下载并使用本工具。</p>
+<p>您的使用行为或者您以其他任何明示或者默示方式表示接受本协议的，即视为您已阅读并同意本协议的约束。</p>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2017/01/01/about_me/">
+                About Me
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2017-01-01</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <h1 id="About-Me"><a href="#About-Me" class="headerlink" title="About Me"></a>About Me</h1><ul>
+<li>Trim</li>
+<li>chamd5</li>
+<li>CTFer,Pentester,Coder</li>
+</ul>
+
+        </div>
+    
+
+</div>
+            
+        </section>
+    </div>
+</div>
+
+
+
+
+
+
+</div>
+
+<!-- Footer -->
+<div class="push"></div>
+
+<footer class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+                <h2>About</h2>
+                <p>
+                    欢迎大家下载和使用<a href="https://github.com/Adminisme/ServerScan" target="_blank" rel="noopener">ServerScan</a>.
+                </p>
+            </div>
+            
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
+        <h2>Recent Posts</h2>
+        <ul>
+            
+            <li>
+                <a class="footer-post" href="/2020/04/05/ServerScan/">ServerScan</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2017/01/01/about_me/">About Me</a>
+            </li>
+            
+        </ul>
+    </div>
+
+
+
+            
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline footer-social-icons">
+                    
+                    <li class="list-inline-item">
+                        <a href="https://github.com/Adminisme/" target="_blank" rel="noopener">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-copyright">
+                    Copyright © 2018 Trim's Blog.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Tween Max -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Custom JavaScript -->
+
+<script src="/js/main.js"></script>
+
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
