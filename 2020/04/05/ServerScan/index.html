@@ -170,17 +170,17 @@
 <li>Web服务（http、https）信息探测</li>
 <li><del>扫描结果兼容INFINITY攻防协同平台 （暂不公开）</del></li>
 </ul>
-<h2 id="🎉First-Game"><a href="#🎉First-Game" class="headerlink" title="🎉First Game"></a>🎉First Game</h2><p>​    总结诸多实战经验，考虑到实战过程中会出现和存在诸多复杂的环境，因此<strong>ServerScan</strong>设计了<strong>轻巧版</strong>、<strong>专业版</strong>、支持<strong>Cobalt Strike跨平台beacon: **[</strong>Cross C2<strong>](<a href="https://github.com/gloxec/CrossC2)的动态链接库，~~以及支持" target="_blank" rel="noopener">https://github.com/gloxec/CrossC2)的动态链接库，~~以及支持</a></strong>INFINITY攻防协同平台的专用版**~~。便于在不同的Shell环境中可以轻松自如的使用：如：Windows Cmd、Linux Console、远控Console、WebShell等，以及Cobalt Strike cna脚本文件加载和无文件落地的内存加载使用。</p>
+<h2 id="🎉First-Game"><a href="#🎉First-Game" class="headerlink" title="🎉First Game"></a>🎉First Game</h2><p>​ 总结诸多实战经验，考虑到实战过程中会出现和存在诸多复杂的环境，因此<strong>ServerScan</strong>设计了<strong>轻巧版</strong>、<strong>专业版</strong>、支持<strong>Cobalt Strike跨平台beacon:<a href="https://github.com/gloxec/CrossC2" target="_blank" rel="noopener">Cross C2</a>的动态链接库</strong>，以及支持<del><strong>INFINITY攻防协同平台的专用版</strong></del>。便于在不同的Shell环境中可以轻松自如的使用：如：Windows Cmd、Linux Console、远控Console、WebShell等，以及Cobalt Strike cna脚本文件加载和无文件落地的内存加载使用。</p>
 <p><strong>轻巧版：</strong></p>
-<p>​    参数形式简单、扫描速度快耗时短、文件体积小、适合在网络情况较好条件情况下使用。</p>
+<p>​ 参数形式简单、扫描速度快耗时短、文件体积小、适合在网络情况较好条件情况下使用。</p>
 <p><strong>专业版：</strong></p>
-<p>​    支持参数默认值、支持自定义扫描超时时长、支持扫描结果导出、适合在网络情况较苛刻的条件情况下使用。</p>
+<p>​ 支持参数默认值、支持自定义扫描超时时长、支持扫描结果导出、适合在网络情况较苛刻的条件情况下使用。</p>
 <p><strong>动态链接库：</strong></p>
-<p>​    为支持Cobalt Strike跨平台beacon，基于轻巧版本进行编译动态链接库编译，扫描超时时长为1.5秒。</p>
+<p>​ 为支持Cobalt Strike跨平台beacon，基于轻巧版本进行编译动态链接库编译，扫描超时时长为1.5秒。</p>
 <h3 id="💻for-Linux-or-Windows"><a href="#💻for-Linux-or-Windows" class="headerlink" title="💻for  Linux or Windows"></a>💻for  Linux or Windows</h3><ul>
-<li><h4 id="轻巧版"><a href="#轻巧版" class="headerlink" title="轻巧版"></a>轻巧版</h4><ul>
+<li><h4 id="轻巧版"><a href="#轻巧版" class="headerlink" title="轻巧版"></a>轻巧版</h4></li>
 <li><p><strong><em>for PortScan</em></strong></p>
-<p><strong>Usage：</strong></p>
+<p>  <strong>Usage：</strong></p>
 <p><img src="./img/Linux/Air_scan_use.png" alt="Air_scan_use"></p>
 <p><strong>Scanning：</strong></p>
 <p><img src="./img/Linux/Air_scan.png" alt="Air_scan1"></p>
@@ -190,8 +190,6 @@
 <p><img src="./img/Windows/Air_scan_probes_use.png" alt="Air_scan_probes_use"></p>
 <p><strong>Scanning：</strong></p>
 <p><img src="./img/Windows/Air_scan_probes.png" alt="Air_scan_probes"></p>
-</li>
-</ul>
 </li>
 <li><h4 id="专业版"><a href="#专业版" class="headerlink" title="专业版"></a>专业版</h4><ul>
 <li><p><strong><em>for PortScan</em></strong></p>
@@ -209,13 +207,13 @@
 </ul>
 </li>
 </ul>
-<h3 id="🎮for-Cobalt-Strike"><a href="#🎮for-Cobalt-Strike" class="headerlink" title="🎮for Cobalt Strike"></a>🎮for Cobalt Strike</h3><pre><code>  * can脚本
-
-* for PortScan
-
-
-
-* for Service and Version Detection</code></pre><ul>
+<h3 id="🎮for-Cobalt-Strike"><a href="#🎮for-Cobalt-Strike" class="headerlink" title="🎮for Cobalt Strike"></a>🎮for Cobalt Strike</h3><pre><code>* can脚本</code></pre><ul>
+<li>for PortScan</li>
+</ul>
+<ul>
+<li>for Service and Version Detection</li>
+</ul>
+<ul>
 <li><p>Cobalt Strike跨平台beacon</p>
 <ul>
 <li>for PortScan</li>
@@ -252,10 +250,10 @@
 </ul>
 <h2 id="🐱‍👓Usage"><a href="#🐱‍👓Usage" class="headerlink" title="🐱‍👓Usage"></a>🐱‍👓Usage</h2><ul>
 <li><p><strong>轻巧版</strong></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">HOST  Host to be scanned, supports four formats:</span><br><span class="line">		192.168.1.1</span><br><span class="line">		192.168.1.1-10</span><br><span class="line">		192.168.1.*</span><br><span class="line">		192.168.1.0/24</span><br><span class="line">PORT  Customize port list, separate with ',' example: 21,22,80-99,8000-8080 ...</span><br><span class="line">MODEL Scan Model: icmp or tcp</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">HOST  Host to be scanned, supports four formats:</span><br><span class="line">    192.168.1.1</span><br><span class="line">    192.168.1.1-10</span><br><span class="line">    192.168.1.*</span><br><span class="line">    192.168.1.0/24</span><br><span class="line">PORT  Customize port list, separate with ',' example: 21,22,80-99,8000-8080 ...</span><br><span class="line">MODEL Scan Model: icmp or tcp</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><strong>专业版</strong></p>
-  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">-h string</span><br><span class="line">  	Host to be scanned, supports four formats:</span><br><span class="line">  	192.168.1.1</span><br><span class="line">  	192.168.1.1-10</span><br><span class="line">  	192.168.1.*</span><br><span class="line">  	192.168.1.0/24.</span><br><span class="line">-m string</span><br><span class="line">  	Scan Model icmp or tcp. (default "icmp")</span><br><span class="line">-o string</span><br><span class="line">  	Output the scanning information to file.</span><br><span class="line">-p string</span><br><span class="line">  	Customize port list, separate with ',' example: 21,22,80-99,8000-8080 ... (default "80-99,7000-9000,9001-9999,4430,1433,1521,3306,5000,5432,6379,21,22,100-500,873,4440,6082,3389,5560,5900-5909,1080,1900,10809,50030,50050,50070")</span><br><span class="line">-t int</span><br><span class="line">  	Setting scaner connection timeouts,Maxtime 3000 Millisecond. (default 1500)</span><br><span class="line">-v	ServerScan Build Version</span><br></pre></td></tr></table></figure>
+  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">-h string</span><br><span class="line">    Host to be scanned, supports four formats:</span><br><span class="line">    192.168.1.1</span><br><span class="line">    192.168.1.1-10</span><br><span class="line">    192.168.1.*</span><br><span class="line">    192.168.1.0/24.</span><br><span class="line">-m string</span><br><span class="line">    Scan Model icmp or tcp. (default "icmp")</span><br><span class="line">-o string</span><br><span class="line">    Output the scanning information to file.</span><br><span class="line">-p string</span><br><span class="line">    Customize port list, separate with ',' example: 21,22,80-99,8000-8080 ... (default "80-99,7000-9000,9001-9999,4430,1433,1521,3306,5000,5432,6379,21,22,100-500,873,4440,6082,3389,5560,5900-5909,1080,1900,10809,50030,50050,50070")</span><br><span class="line">-t int</span><br><span class="line">    Setting scaner connection timeouts,Maxtime 3000 Millisecond. (default 1500)</span><br><span class="line">-v  ServerScan Build Version</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><strong>Cobalt Strike版本</strong></p>
 <ul>
@@ -268,7 +266,7 @@
 </ul>
 <ul>
 <li><p><strong>INFINITY攻防协同平台版本</strong></p>
-<p>​    <del>（暂不公开）</del></p>
+<p>​ <del>（暂不公开）</del></p>
 </li>
 </ul>
 <h2 id="💖鸣谢"><a href="#💖鸣谢" class="headerlink" title="💖鸣谢"></a>💖鸣谢</h2><p>一路走来，得到了很多前辈的帮助和指导，在此表示衷心的感谢！</p>
@@ -279,8 +277,8 @@
 <li><a href="https://github.com/stefanwichmann/lanscan" target="_blank" rel="noopener">lanscan</a> - Blazing fast, local network scanning in Go</li>
 <li><a href="https://github.com/RickGray/vscan-go" target="_blank" rel="noopener">vscan-go</a> - Golang version for nmap service and application version detection</li>
 </ul>
-<h2 id="📄版权"><a href="#📄版权" class="headerlink" title="📄版权"></a>📄版权</h2><p>​    该项目未经作者本人允许，禁止商业性使用。</p>
-<p>​    任何人不得将其用于非法用途以及盈利等目的，否则后果自行承担并将追究其相关责任！</p>
+<h2 id="📄版权"><a href="#📄版权" class="headerlink" title="📄版权"></a>📄版权</h2><p>​ 该项目未经作者本人允许，禁止商业性使用。</p>
+<p>​ 任何人不得将其用于非法用途以及盈利等目的，否则后果自行承担并将追究其相关责任！</p>
 <h2 id="📜免责声明"><a href="#📜免责声明" class="headerlink" title="📜免责声明"></a>📜免责声明</h2><ol>
 <li><p>本工具仅面向于合法授权的渗透测试安全人员以及进行常规操作的网络运维人员，用户可以合法且非商业目的地前提进行下载、传播、复制、使用本工具。</p>
 </li>
