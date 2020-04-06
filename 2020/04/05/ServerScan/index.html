@@ -161,7 +161,8 @@
         
 
         <!-- Post Content -->
-        <h1 id="ServerScan"><a href="#ServerScan" class="headerlink" title="ServerScan"></a>ServerScan</h1><p>一款使用<strong>Golang</strong>开发且适用于攻防演习<strong>内网横向信息收集</strong>的<strong>高并发</strong>网络扫描、服务探测工具。</p>
+        <h1 id="ServerScan"><a href="#ServerScan" class="headerlink" title="ServerScan"></a>ServerScan</h1><p><img src="https://img.shields.io/badge/Author-Trim-blueviolet" alt="Author">  <img src="https://img.shields.io/badge/servercan-Bin-ff69b4" alt="Bin">  <img src="https://img.shields.io/badge/build-passing-green.svg" alt="build">  <img src="https://img.shields.io/badge/language-golang-blue.svg" alt=""></p>
+<h1 id="ServerScan-1"><a href="#ServerScan-1" class="headerlink" title="ServerScan"></a>ServerScan</h1><p>一款使用<strong>Golang</strong>开发且适用于攻防演习<strong>内网横向信息收集</strong>的<strong>高并发</strong>网络扫描、服务探测工具。</p>
 <h2 id="🍭Property"><a href="#🍭Property" class="headerlink" title="🍭Property"></a>🍭Property</h2><ul>
 <li>多平台支持（Window、Mac、Linux、Cobalt Strike）</li>
 <li>存活IP探测（支持TCP、ICMP两种模式）</li>
@@ -170,17 +171,17 @@
 <li>Web服务（http、https）信息探测</li>
 <li><del>扫描结果兼容INFINITY攻防协同平台 （暂不公开）</del></li>
 </ul>
-<h2 id="🎉First-Game"><a href="#🎉First-Game" class="headerlink" title="🎉First Game"></a>🎉First Game</h2><p>​ 总结诸多实战经验，考虑到实战过程中会出现和存在诸多复杂的环境，因此<strong>ServerScan</strong>设计了<strong>轻巧版</strong>、<strong>专业版</strong>、支持<strong>Cobalt Strike跨平台beacon:<a href="https://github.com/gloxec/CrossC2" target="_blank" rel="noopener">Cross C2</a>的动态链接库</strong>，以及支持<del><strong>INFINITY攻防协同平台的专用版</strong></del>。便于在不同的Shell环境中可以轻松自如的使用：如：Windows Cmd、Linux Console、远控Console、WebShell等，以及Cobalt Strike cna脚本文件加载和无文件落地的内存加载使用。</p>
+<h2 id="🎉First-Game"><a href="#🎉First-Game" class="headerlink" title="🎉First Game"></a>🎉First Game</h2><p>​    总结诸多实战经验，考虑到实战过程中会出现和存在复杂得环境、红蓝对抗过程中常见得内存加载无文件落地执行等，因此<strong>ServerScan</strong>设计了<strong>轻巧版</strong>、<strong>专业版</strong>、支持<strong>Cobalt Strike跨平台beacon:<a href="https://github.com/gloxec/CrossC2" target="_blank" rel="noopener">Cross C2</a>的动态链接库</strong>，以及支持<strong><del>INFINITY攻防协同平台的专用版</del></strong>。便于在不同的Shell环境中可以轻松自如的使用：如：Windows Cmd、Linux Console、远控Console、WebShell等，以及Cobalt Strike联动使用cna脚本文件加载，实现内网信息收集为下一步横向移动快速铺路。</p>
 <p><strong>轻巧版：</strong></p>
-<p>​ 参数形式简单、扫描速度快耗时短、文件体积小、适合在网络情况较好条件情况下使用。</p>
+<p> 参数形式简单、扫描速度快耗时短、文件体积小、适合在网络情况较好条件情况下使用。</p>
 <p><strong>专业版：</strong></p>
-<p>​ 支持参数默认值、支持自定义扫描超时时长、支持扫描结果导出、适合在网络条件较苛刻的情况下使用。</p>
+<p> 支持参数默认值、支持自定义扫描超时时长、支持扫描结果导出、适合在网络条件较苛刻的情况下使用。</p>
 <p><strong>动态链接库：</strong></p>
-<p>​ 为支持Cobalt Strike跨平台beacon，无文件落地，基于轻巧版本进行动态链接库编译，扫描超时时长为1.5秒。</p>
+<p> 为支持Cobalt Strike跨平台beacon，无文件落地执行，无文件执行的进程信息，基于轻巧版本进行动态链接库编译，扫描超时时长为1.5秒。</p>
 <h3 id="💻for-Linux-or-Windows"><a href="#💻for-Linux-or-Windows" class="headerlink" title="💻for  Linux or Windows"></a>💻for  Linux or Windows</h3><ul>
-<li><h4 id="轻巧版"><a href="#轻巧版" class="headerlink" title="轻巧版"></a>轻巧版</h4></li>
+<li><h4 id="轻巧版"><a href="#轻巧版" class="headerlink" title="轻巧版"></a>轻巧版</h4><ul>
 <li><p><strong><em>for PortScan</em></strong></p>
-<p>  <strong>Usage：</strong></p>
+<p><strong>Usage：</strong></p>
 <p><img src="./img/serverscan/Linux/Air_scan_use.png" alt="Air_scan_use"></p>
 <p><strong>Scanning：</strong></p>
 <p><img src="./img/serverscan/Linux/Air_scan.png" alt="Air_scan1"></p>
@@ -190,6 +191,8 @@
 <p><img src="./img/serverscan/Windows/Air_scan_probes_use.png" alt="Air_scan_probes_use"></p>
 <p><strong>Scanning：</strong></p>
 <p><img src="./img/serverscan/Windows/Air_scan_probes.png" alt="Air_scan_probes"></p>
+</li>
+</ul>
 </li>
 <li><h4 id="专业版"><a href="#专业版" class="headerlink" title="专业版"></a>专业版</h4><ul>
 <li><p><strong><em>for PortScan</em></strong></p>
@@ -208,24 +211,40 @@
 </li>
 </ul>
 <h3 id="🎮for-Cobalt-Strike"><a href="#🎮for-Cobalt-Strike" class="headerlink" title="🎮for Cobalt Strike"></a>🎮for Cobalt Strike</h3><ul>
-<li><p><strong><em>can脚本</em></strong></p>
-</li>
-<li><p>for PortScan</p>
+<li><p><strong><em>Windows</em></strong></p>
+<pre><code>由于Cobalt Strike已经内置了PortScan，因此目前Windows仅支持利用cna上传对应版本的可执行文件到服务器进行扫描。</code></pre><ul>
+<li><p><strong><em>for Service and Version Detection</em></strong></p>
+<p>Interact:</p>
+<p><img src="./img/serverscan/CobaltStrike/serverscan_windows.jpg" alt="serverscan_windows"></p>
+<p><img src="./img/serverscan/CobaltStrike/serverscan2_windows.jpg" alt="serverscan2_windows"></p>
 </li>
 </ul>
-<ul>
-<li>for Service and Version Detection</li>
+</li>
 </ul>
 <ul>
 <li><p><strong><em>Cobalt Strike跨平台beacon</em></strong></p>
-</li>
-<li><p>for PortScan</p>
-</li>
-</ul>
+<p>​        ServerScan的优势在于跨平台，在Hook师傅的帮（jian）助（du）下目前已经基本适配了<a href="https://github.com/gloxec/CrossC2" target="_blank" rel="noopener">Cross C2</a>的Linux、Mac OS两大平台，为了提高隐匿性减少文件特征，目前支持内存加载可执行程序和动态链接库调用，您只需在安装了Cross C2的Cobalt Strike中导入对应的.cna脚本，即可实现ServerScan与Cobalt Strike跨平台beacon联动，具体使用参考<a href="#usage">Usage</a>。</p>
 <ul>
-<li>for Service and Version Detection</li>
+<li><p><strong><em>for PortScan</em></strong></p>
+<p>Interact:</p>
+<p><img src="./img/serverscan/CobaltStrike/portscan_console.jpg" alt="portscan_console"></p>
+<p>Targets结果集自动导入:</p>
+<p><img src="./img/serverscan/CobaltStrike/portscan_targets.jpg" alt="portscan_targets"></p>
+<p>services结果集自动导入:</p>
+<p><img src="./img/serverscan/CobaltStrike/portscan_services.jpg" alt="portscan_services"></p>
+</li>
+<li><p><strong><em>for Service and Version Detection</em></strong></p>
+<p>Interact:</p>
+<p><img src="./img/serverscan/CobaltStrike/serverscan_console.png" alt="serverscan_console"></p>
+<p>Targets结果集自动导入:</p>
+<p><img src="./img/serverscan/CobaltStrike/serverscan_targets.jpg" alt="serverscan_targets"></p>
+<p>services结果集自动导入:</p>
+<p><img src="./img/serverscan/CobaltStrike/serverscan_services.jpg" alt="serverscan_services"></p>
+</li>
 </ul>
-<h2 id="🌈Runtime-Environment"><a href="#🌈Runtime-Environment" class="headerlink" title="🌈Runtime Environment"></a>🌈Runtime Environment</h2><p>为了实现<strong>“一次开发，到处运行“</strong>的效果，<strong>ServerScan</strong>采用具有跨平台编译特性的<strong>Golang</strong>进行开发。</p>
+</li>
+</ul>
+<h2 id="🌈Runtime-Environment"><a href="#🌈Runtime-Environment" class="headerlink" title="🌈Runtime Environment"></a>🌈Runtime Environment</h2><p>为了实现“<strong>一次开发，到处运行</strong>”的效果，<strong>ServerScan</strong>采用具有跨平台编译特性的<strong>Golang</strong>进行开发。</p>
 <p>目前已成功编译了<strong>三大主流操作系统</strong>的<strong>可执行程序</strong>和<strong>动态链接库</strong>，并在如下操作系统<strong>通过</strong>了运行测试：</p>
 <h4 id="📺Windows"><a href="#📺Windows" class="headerlink" title="📺Windows"></a>📺Windows</h4><ul>
 <li><p><strong>Windows 2003</strong></p>
@@ -258,23 +277,38 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">HOST  Host to be scanned, supports four formats:</span><br><span class="line">    192.168.1.1</span><br><span class="line">    192.168.1.1-10</span><br><span class="line">    192.168.1.*</span><br><span class="line">    192.168.1.0/24</span><br><span class="line">PORT  Customize port list, separate with ',' example: 21,22,80-99,8000-8080 ...</span><br><span class="line">MODEL Scan Model: icmp or tcp</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><strong>专业版</strong></p>
-  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">-h string</span><br><span class="line">    Host to be scanned, supports four formats:</span><br><span class="line">    192.168.1.1</span><br><span class="line">    192.168.1.1-10</span><br><span class="line">    192.168.1.*</span><br><span class="line">    192.168.1.0/24.</span><br><span class="line">-m string</span><br><span class="line">    Scan Model icmp or tcp. (default "icmp")</span><br><span class="line">-o string</span><br><span class="line">    Output the scanning information to file.</span><br><span class="line">-p string</span><br><span class="line">    Customize port list, separate with ',' example: 21,22,80-99,8000-8080 ... (default "80-99,7000-9000,9001-9999,4430,1433,1521,3306,5000,5432,6379,21,22,100-500,873,4440,6082,3389,5560,5900-5909,1080,1900,10809,50030,50050,50070")</span><br><span class="line">-t int</span><br><span class="line">    Setting scaner connection timeouts,Maxtime 3000 Millisecond. (default 1500)</span><br><span class="line">-v  ServerScan Build Version</span><br></pre></td></tr></table></figure>
+  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">-h string</span><br><span class="line">  	Host to be scanned, supports four formats:</span><br><span class="line">  	192.168.1.1</span><br><span class="line">  	192.168.1.1-10</span><br><span class="line">  	192.168.1.*</span><br><span class="line">  	192.168.1.0/24.</span><br><span class="line">-m string</span><br><span class="line">  	Scan Model icmp or tcp. (default "icmp")</span><br><span class="line">-o string</span><br><span class="line">  	Output the scanning information to file.</span><br><span class="line">-p string</span><br><span class="line">  	Customize port list, separate with ',' example: 21,22,80-99,8000-8080 ... (default "80-99,7000-9000,9001-9999,4430,1433,1521,3306,5000,5432,6379,21,22,100-500,873,4440,6082,3389,5560,5900-5909,1080,1900,10809,50030,50050,50070")</span><br><span class="line">-t int</span><br><span class="line">  	Setting scaner connection timeouts,Maxtime 30 Second. (default 2)</span><br><span class="line">-v	ServerScan Build Version</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><strong>Cobalt Strike版本</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">├─ServerScanForLinux</span><br><span class="line">│  │  CrossC2Kit.cna</span><br><span class="line">│  │  serverscan.linux.elf.cna</span><br><span class="line">│  │  serverscan.linux.so.cna</span><br><span class="line">│  │</span><br><span class="line">│  ├─ELF</span><br><span class="line">│  │      portscan</span><br><span class="line">│  │      portscan386</span><br><span class="line">│  │      serverscan</span><br><span class="line">│  │      serverscan386</span><br><span class="line">│  │</span><br><span class="line">│  └─SO</span><br><span class="line">│          crossc2_portscan.so</span><br><span class="line">│          crossc2_serverscan.so</span><br><span class="line">│</span><br><span class="line">└─ServerScanForWindows</span><br><span class="line">    │  serverScan.win.cna</span><br><span class="line">    │</span><br><span class="line">    └─PE</span><br><span class="line">        ├─x64</span><br><span class="line">        │      serverscan_amd64.exe</span><br><span class="line">        │</span><br><span class="line">        └─x86</span><br><span class="line">                serverscan_386.exe</span><br></pre></td></tr></table></figure>
+
 <ul>
-<li>can脚本</li>
-</ul>
+<li><p><strong><em>Windows</em></strong></p>
+<p>   在Cobalt Strike的Script Manager中<strong><em>Load</em></strong> ServerScanForWindows/serverScan.win.cna</p>
 </li>
 </ul>
+<p>（Ps：serverScan.win.cna主要是通过将本地对应版本的Serverscan上传到服务器的c:\windows\temp\目录执行，此方法略显笨拙，后期会更新无文件落地的方法）</p>
+<p><img src="./img/serverscan/Usage/scriptManager_win.png" alt="scriptManager_win"></p>
+<pre><code>选择一个已经上线的beacon,在Interact中输入help查看Commands是否新增了Serverscan86、Serverscan64，若出现就可以像使用portscan一样使用serverscan了🙂</code></pre><p><img src="./img/serverscan/Usage/windows_help.jpg" alt="windows_help"></p>
+<p><img src="./img/serverscan/Usage/windows_usage.jpg" alt="windows_usage"></p>
 <ul>
-<li>Hook - 无文件落地</li>
+<li><strong><em>Cobalt Strike跨平台beacon</em></strong></li>
 </ul>
+<p>​     首先您应该确保已经成功在安装了<a href="https://github.com/gloxec/CrossC2" target="_blank" rel="noopener">Cross C2</a>；</p>
+<p>​    其次在Cobalt Strike的Script Manager中 <strong><em>Load</em></strong> serverscan.linux.elf.cna 和  serverscan.linux.so.cna两个脚本，其分别对应内存加载ELF、动态链接库so调用，两者的区别主要是隐匿性的问题😎</p>
+<p>​    若直接调用so文件运行serverscan时，在主机上ps无法找到对应的进程，而直接内存加载serverscan的ELF则会在运行过程中出现一个随机名称的扫描进程🙃</p>
+<p>（目前带有指纹识别的动态链接库编译的文件体积较大，还没有找到合适的办法压缩体积，各位师傅们有好的提议欢迎issue）🔥🔥🔥</p>
+<p><img src="./img/serverscan/Usage/scriptManager_linux.png" alt="scriptManager_linux"></p>
+</li>
+</ul>
+<p>​        <img src="./img/serverscan/Usage/linux_help.jpg" alt="linux_help"></p>
+<p><img src="./img/serverscan/Usage/linux_usage.jpg" alt="linux_usage"></p>
 <ul>
 <li><p><strong>INFINITY攻防协同平台版本</strong></p>
-<p>​ <del>（暂不公开）</del></p>
+<p> <del>（暂不公开）</del></p>
 </li>
 </ul>
-<h2 id="🎁支持ServerScan"><a href="#🎁支持ServerScan" class="headerlink" title="🎁支持ServerScan"></a>🎁支持ServerScan</h2><p>如果您认为ServerScan帮助到了您，想支持作者继续改进和优化ServerScan，可使用微信扫一扫下方的<strong>赞赏码</strong>。</p>
+<h2 id="🎁支持ServerScan"><a href="#🎁支持ServerScan" class="headerlink" title="🎁支持ServerScan"></a>🎁支持ServerScan</h2><p>如果您认为ServerScan帮助到了您，可使用微信扫一扫下方的<strong>赞赏码</strong>，支持作者继续<strong>改进</strong>和<strong>优化</strong>ServerScan。</p>
 <img src="./img/serverscan/thankyou.jpg" alt="thankyou" style="zoom: 33%;" />
 
 <h2 id="💖鸣谢"><a href="#💖鸣谢" class="headerlink" title="💖鸣谢"></a>💖鸣谢</h2><p>一路走来，得到了很多前辈的帮助和指导，在此表示衷心的感谢！</p>
@@ -285,18 +319,13 @@
 <li><a href="https://github.com/stefanwichmann/lanscan" target="_blank" rel="noopener">lanscan</a> - Blazing fast, local network scanning in Go</li>
 <li><a href="https://github.com/RickGray/vscan-go" target="_blank" rel="noopener">vscan-go</a> - Golang version for nmap service and application version detection</li>
 </ul>
-<h2 id="📄版权"><a href="#📄版权" class="headerlink" title="📄版权"></a>📄版权</h2><p>​ 该项目未经作者本人允许，禁止商业性使用。</p>
-<p>​ 任何人不得将其用于非法用途以及盈利等目的，否则后果自行承担并将追究其相关责任！</p>
+<h2 id="📄版权"><a href="#📄版权" class="headerlink" title="📄版权"></a>📄版权</h2><p> 该项目未经作者本人允许，禁止商业使用。</p>
+<p> 任何人不得将其用于非法用途及盈利等目的，否则自行承担后果并负相应法律责任。</p>
 <h2 id="📜免责声明"><a href="#📜免责声明" class="headerlink" title="📜免责声明"></a>📜免责声明</h2><ol>
-<li><p>本工具仅面向于合法授权的渗透测试安全人员以及进行常规操作的网络运维人员，用户可以合法且非商业目的地前提进行下载、传播、复制、使用本工具。</p>
-</li>
-<li><p>本工具使用过程中，您应确保自己所有行为符合当地的法律法规，并且已经取得了足够的合法授权。</p>
-</li>
-<li><p>不得将此软件用于从事违反中国人民共和国相关法律所禁止的活动，本工具所有作者和所有贡献者不承担用户擅自使用本工具从事的任何违法活动所产生的任何责任。</p>
-</li>
+<li>本工具仅面向拥有合法授权的渗透测试安全人员及进行常规操作的网络运维人员，用户可在取得足够合法授权且非商用的前提下进行下载、复制、传播或使用。</li>
+<li>在使用本工具的过程中，您应确保自己的所有行为符合当地法律法规，且不得将此软件用于违反中国人民共和国相关法律的活动。本工具所有作者和贡献者不承担用户擅自使用本工具从事任何违法活动所产生的任何责任。</li>
 </ol>
-<p>您已充分阅读、完全理解并接受本协议所有条款，否则，请您不要下载并使用本工具。</p>
-<p>您的使用行为或者您以其他任何明示或者默示方式表示接受本协议的，即视为您已阅读并同意本协议的约束。</p>
+<p>请您在下载并使用本工具前，充分阅读、完全理解并接受本协议的所有条款。您的使用行为或您以其他任何方式明示或默认表示接受本协议，即视为您已阅读并同意本协议的约束。</p>
 
     </div>
 
