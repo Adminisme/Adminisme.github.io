@@ -165,13 +165,13 @@
 <li>多平台支持（Windows、Mac、Linux、Cobalt Strike）</li>
 <li>存活IP探测（支持TCP、ICMP两种模式）</li>
 <li>超快的端口扫描</li>
-<li>新增服务和应用版本检测功能，采用内置指纹探针采用<a href="https://raw.githubusercontent.com/nmap/nmap/master/nmap-service-probes" target="_blank" rel="noopener">nmap-service-probes</a></li>
+<li>服务和应用版本检测功能，内置指纹探针采用:<a href="https://raw.githubusercontent.com/nmap/nmap/master/nmap-service-probes" target="_blank" rel="noopener">nmap-service-probes</a></li>
 <li>Web服务（http、https）信息探测</li>
-<li><del>扫描结果兼容INFINITY攻防协同平台 （暂不公开）</del></li>
+<li><del>扫描结果兼容INFINITY攻防协同平台 ~</del>（暂不公开）</li>
 </ul>
-<h2 id="🎉First-Game"><a href="#🎉First-Game" class="headerlink" title="🎉First Game"></a>🎉First Game</h2><p>​    总结诸多实战经验，考虑到实战过程中会出现和存在复杂得环境、红蓝对抗过程中常见得内存加载无文件落地执行等，因此<strong>ServerScan</strong>设计了<strong>轻巧版</strong>、<strong>专业版</strong>、支持<strong>Cobalt Strike跨平台beacon:<a href="https://github.com/gloxec/CrossC2" target="_blank" rel="noopener">Cross C2</a>的动态链接库</strong>，以及支持<strong><del>INFINITY攻防协同平台的专用版</del></strong>。便于在不同的Shell环境中可以轻松自如的使用：如：Windows Cmd、Linux Console、远控Console、WebShell等，以及Cobalt Strike联动使用cna脚本文件加载，实现内网信息收集为下一步横向移动快速铺路。</p>
+<h2 id="🎉First-Game"><a href="#🎉First-Game" class="headerlink" title="🎉First Game"></a>🎉First Game</h2><p>​    总结诸多实战经验，考虑到实战过程中会出现和存在复杂的环境、红蓝对抗过程中常用的内存加载无文件落地执行等，因此<strong>ServerScan</strong>设计了<strong>轻巧版</strong>、<strong>专业版</strong>、支持<strong>Cobalt Strike跨平台beacon:<a href="https://github.com/gloxec/CrossC2" target="_blank" rel="noopener">Cross C2</a>的动态链接库</strong>，<del>以及支持**INFINITY攻防协同平台的专用版</del>**。便于在不同的Shell环境中可以轻松自如地使用：如：Windows Cmd、Linux Console、远控Console、WebShell等，以及Cobalt Strike联动使用cna脚本文件加载，实现内网信息快速收集，为下一步横向移动铺路。</p>
 <p><strong>轻巧版：</strong></p>
-<p> 参数形式简单、扫描速度快耗时短、文件体积小、适合在网络情况较好条件情况下使用。</p>
+<p> 参数形式简单、扫描速度快、耗时短、文件体积小、适合在网络情况较好的条件情况下使用。</p>
 <p><strong>专业版：</strong></p>
 <p> 支持参数默认值、支持自定义扫描超时时长、支持扫描结果导出、适合在网络条件较苛刻的情况下使用。</p>
 <p><strong>动态链接库：</strong></p>
@@ -210,7 +210,7 @@
 </ul>
 <h3 id="🎮for-Cobalt-Strike"><a href="#🎮for-Cobalt-Strike" class="headerlink" title="🎮for Cobalt Strike"></a>🎮for Cobalt Strike</h3><ul>
 <li><p><strong><em>Windows</em></strong></p>
-<p>  由于Cobalt Strike已经内置了PortScan，因此目前Windows仅支持利用cna上传对应版本的可执行文件到服务器进行扫描。</p>
+<p>  由于Cobalt Strike已经内置了PortScan，因此目前Windows仅支持利用cna上传对应版本的ServerScan可执行文件到服务器进行扫描。</p>
 <ul>
 <li><p><strong><em>for Service and Version Detection</em></strong></p>
 <p>Interact:</p>
@@ -222,7 +222,7 @@
 </ul>
 <ul>
 <li><p><strong><em>Cobalt Strike跨平台beacon</em></strong></p>
-<p>​        ServerScan的优势在于跨平台，在Hook师傅的帮（jian）助（du）下目前已经基本适配了<a href="https://github.com/gloxec/CrossC2" target="_blank" rel="noopener">Cross C2</a>的Linux、Mac OS两大平台，为了提高隐匿性减少文件特征，目前支持内存加载可执行程序和动态链接库调用，您只需在安装了Cross C2的Cobalt Strike中导入对应的.cna脚本，即可实现ServerScan与Cobalt Strike跨平台beacon联动，具体使用参考<a href="#usage">Usage</a>。</p>
+<p>​        ServerScan的优势在于跨平台，在Hook师傅的帮（jiān）助（dū）下目前已经基本适配了<a href="https://github.com/gloxec/CrossC2" target="_blank" rel="noopener">Cross C2</a>的Linux、Mac OS两大平台，为了提高隐匿性减少文件特征，目前支持内存加载可执行程序和动态链接库调用，您只需在安装了Cross C2的Cobalt Strike中导入对应的.cna脚本，即可实现ServerScan与Cobalt Strike跨平台beacon联动，具体使用参考<a href="#usage">Usage</a>。</p>
 <ul>
 <li><p><strong><em>for PortScan</em></strong></p>
 <p>Interact:</p>
@@ -283,7 +283,7 @@
 
 <ul>
 <li><p><strong><em>Windows</em></strong></p>
-<p>   在Cobalt Strike的Script Manager中<strong><em>Load</em></strong> ServerScanForWindows/serverScan.win.cna</p>
+<p>   在Cobalt Strike的Script Manager中<strong><em>Load</em></strong> serverScan.win.cna</p>
 </li>
 </ul>
 <p>（Ps：serverScan.win.cna主要是通过将本地对应版本的Serverscan上传到服务器的c:\windows\temp\目录执行，此方法略显笨拙，后期会更新无文件落地的方法）</p>
@@ -293,7 +293,7 @@
 <ul>
 <li><strong><em>Cobalt Strike跨平台beacon</em></strong></li>
 </ul>
-<p>​     首先您应该确保已经成功在安装了<a href="https://github.com/gloxec/CrossC2" target="_blank" rel="noopener">Cross C2</a>；</p>
+<p>​     首先您应该确保已经在Cobalt Strike成功安装了<a href="https://github.com/gloxec/CrossC2" target="_blank" rel="noopener">Cross C2</a>；</p>
 <p>​    其次在Cobalt Strike的Script Manager中 <strong><em>Load</em></strong> serverscan.linux.elf.cna 和  serverscan.linux.so.cna两个脚本，其分别对应内存加载ELF、动态链接库so调用，两者的区别主要是隐匿性的问题😎</p>
 <p>​    若直接调用so文件运行serverscan时，在主机上ps无法找到对应的进程，而直接内存加载serverscan的ELF则会在运行过程中出现一个随机名称的扫描进程🙃</p>
 <p>（目前带有指纹识别的动态链接库编译的文件体积较大，还没有找到合适的办法压缩体积，各位师傅们有好的提议欢迎issue）🔥🔥🔥</p>
@@ -311,7 +311,7 @@
 <img src="./img/serverscan/thankyou.jpg" alt="thankyou" style="zoom: 33%;" />
 
 <h2 id="💖鸣谢"><a href="#💖鸣谢" class="headerlink" title="💖鸣谢"></a>💖鸣谢</h2><p>一路走来，得到了很多前辈的帮助和指导，在此表示衷心的感谢！</p>
-<p>下列是本项目使用或者参考的优秀开源框架，感谢网上众多的开源项目及其开源项目的作者，致敬每一位为网络安全事业做出贡献的每一位前辈！</p>
+<p>下列是本项目使用或者参考的优秀开源框架，感谢网上众多的开源项目及其开源项目的作者，致敬为网络安全事业做出贡献的每一位前辈！</p>
 <ul>
 <li><a href="https://github.com/soxfmr/httpscan.go" target="_blank" rel="noopener">httpscan</a> - httpscan implements by Go</li>
 <li><a href="https://github.com/malfunkt/iprange" target="_blank" rel="noopener">iprange</a> - IPv4 address parser for the nmap format</li>
